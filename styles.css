@@ -1,0 +1,294 @@
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+}
+     
+
+.wrapper {
+  width: 100%;
+  max-width: 1020px;
+  margin: auto;
+ 
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+     background-color: #2d303a;
+    border-bottom-width: 6px; 
+    border-bottom-style: solid; 
+        border-bottom-color: #323746; 
+ }
+
+
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+    color: #FFFFFF;
+   
+}
+
+.char-logo {
+    color: #F06C64;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    margin-left: 40px;
+}
+
+.navigation {
+    align-items: center;
+    display: flex;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.list-nav {
+  display: flex;
+  list-style-type: none;
+  
+}
+
+.list-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-nav a:hover {
+    color: #F06C64;
+    cursor: pointer;
+}
+
+
+li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dot {
+    color: white;
+    justify-content: center;
+}
+
+
+.slider {
+  background-color: #f06c64;
+  border-bottom-width: 6px; 
+  border-bottom-style: solid; 
+      border-bottom-color: #EA676B; 
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 93px;
+}
+
+.arrow-left {
+    margin-left: 40px;
+}
+
+.arrow-right {
+    margin-right: 40px;
+}
+
+.paragraph {
+    color: #767E9E;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.block-services {
+  background-color: #f2f2f2;
+  border-bottom-width: 6px; 
+  border-bottom-style: solid; 
+border-bottom-color: #FFFFFF; 
+}
+
+.block-services h2 {
+    color: #666D89;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.block-services p {
+   width: 220px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    
+}
+
+.card-icon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 20px;
+}
+.card-content h3 {
+    color: #666D89;
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-content p {
+    color: #767E9E;
+    margin: 0;
+    padding-top: 7px;
+    line-height: 22px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+
+
+
+.card-icon {
+    border: solid;
+    border-radius: 50%;
+    border-color: #666D89;
+    width: 60px;
+    height: 60px;
+}
+
+
+.services-content {
+    padding: 59px 40px 26px 40px;
+}
+
+.portfolio {
+  background-color: #2d303a;
+  border-bottom-width: 6px; 
+  border-bottom-style: solid; 
+border-bottom-color: #323746; 
+}
+
+.portfolio p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767E9E;
+    
+}
+
+.portfolio h2 {
+    color: #666D89;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 0;
+
+  }
+
+  .portfolio-content {
+      padding: 59px 40px 48px 40px;
+  }
+
+  .tab span {
+    border: 1px solid #767E9E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #767E9E;
+    margin-right: 11px;
+    padding: 4px;
+    font-size: 12px;
+line-height: 12px;
+text-align: center;
+  }
+
+  .tab span:hover {
+      border-color: white;
+      color: white;
+      cursor: pointer;
+  }
+
+
+  .tab {
+      margin-bottom: 18px;
+  }
+
+  .portfolio-pictures {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+            
+  }
+
+.picture {
+    margin-bottom: 20px;
+}
+
+
+.network {
+    border: solid;
+    border-radius: 50%;
+    border-color: #666D89;
+    width: 32px;
+    height: 32px;
+    border-width: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+
+
+footer {
+  background-color: #2d303a;
+ 
+}
+
+.footer-content {
+ display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 22px 42px 22px 40px;
+}
+
+.all-network {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.all-network a:hover {
+    border-color: white;
+      color: white;
+      cursor: pointer;
+}
+.copyright {
+    font-style: normal;
+font-weight: 900;
+font-size: 13px;
+line-height: 18px;
+color: #666D89;
+display: flex;
+align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+    .wrapper {
+        width: 100%;
+        max-width: 768px;
+        margin: auto;
+    }
+}
