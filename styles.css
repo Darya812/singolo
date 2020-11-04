@@ -345,7 +345,7 @@ align-items: center;
   display: flex;
   margin-right: 50px;
   justify-content: flex-end;
-}
+  }
 
 .navigation {
   display: none;
@@ -361,5 +361,12 @@ align-items: center;
   justify-content: center;
   align-items: center;
   margin-left: 25px;
-}
+  }
+
+/* #sidebar {
+  position: fixed;
+  width: 278px;
+  height: 100%;
+  background: #2D303A;
+} */
 }
