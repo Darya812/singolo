@@ -13,28 +13,27 @@
 
   <body>
     <header id="header" class="header">
-      <div class="header-content wrapper">
+      <div class="header-content wrapper" id="sideBar">
         <div class="icon-menu-burger" onclick="openMenu()">
-          <img src="/menu/Burger-menu-icon.png">
+          <img src="/menu/Burger-menu-icon.png" />
         </div>
-         <div class="logo">
+        <div class="logo">
           <h1>SINGOLO<span class="char-logo">*</span></h1>
         </div>
-        <div id="sidebar"  class="navigation">
-          <div class="icon-menu-burger" onclick="openMenu()">
-            <img src="/menu/Burger-menu-icon.png">
-          </div>
+        <div class="navigation">
           <nav class="nav-header">
             <ul class="list-nav">
-              <li><a href="#slider">HOME</a></li>
-              <li class="dot">.</li>
-              <li><a href="#block-services">SERVICES</a></li>
-              <li class="dot">.</li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li class="dot">.</li>
-              <li><a href="#contacts">ABOUT</a></li>
-              <li class="dot">.</li>
-              <li><a href="#contacts">CONTACT</a></li>
+              <li><a href="#slider" id="blockHomeNav">HOME</a></li>
+              <li class="dot"></li>
+              <li>
+                <a href="#block-services" id="blockServicesNav">SERVICES</a>
+              </li>
+              <li class="dot"></li>
+              <li><a href="#portfolio" id="blockPortfolioNav">PORTFOLIO</a></li>
+              <li class="dot"></li>
+              <li><a href="#contacts" id="blockAboutNav">ABOUT</a></li>
+              <li class="dot"></li>
+              <li><a href="#contacts" id="blockContactNav">CONTACT</a></li>
             </ul>
           </nav>
         </div>
@@ -55,8 +54,8 @@
         </div>
       </div>
     </section>
-    <section  id="block-services" class="block-services">
-      <div   class="position"></div>
+    <section id="block-services" class="block-services">
+      <div class="position"></div>
       <div class="wrapper">
         <div class="services-content">
           <h2>Our Services</h2>
@@ -148,10 +147,10 @@
             eget lacinia odio sem nec elit.
           </p>
           <div class="tab">
-            <span>All</span>
-            <span>Web Design</span>
-            <span>Graphic Design</span>
-            <span>Artwork</span>
+            <span id="tabPortfolioAll">All</span>
+            <span id="tabPortfolioWebDesign">Web Design</span>
+            <span id="tabPortfolioGraphicDesign">Graphic Design</span>
+            <span id="tabPortfolioArtwork">Artwork</span>
           </div>
           <div class="portfolio-pictures">
             <div class="picture">
@@ -201,27 +200,44 @@
           <div class="all-network">
             <div class="network">
               <a href="https://www.facebook.com/"
-                ><div class="network-border"><img class="network-img" src="/icon-network/facebook.png"
-              /></div></a>
+                ><div class="network-border">
+                  <img
+                    class="network-img"
+                    src="/icon-network/facebook.png"
+                  /></div
+              ></a>
             </div>
             <div class="network">
               <a href="https://mail.google.com"
-                ><div class="network-border"><img class="network-img" src="/icon-network/google.png"
-              /></div></a>
+                ><div class="network-border">
+                  <img
+                    class="network-img"
+                    src="/icon-network/google.png"
+                  /></div
+              ></a>
             </div>
             <div class="network">
               <a href="https://twitter.com"
-                ><div class="network-border"><img class="network-img" src="/icon-network/twitter.png"
-              /></div></a>
+                ><div class="network-border">
+                  <img
+                    class="network-img"
+                    src="/icon-network/twitter.png"
+                  /></div
+              ></a>
             </div>
             <div class="network">
               <a href="https://www.linkedin.com/"
-                ><div class="network-border"><img class="network-img" src="/icon-network/linkedin.png"
-              /></div></a>
+                ><div class="network-border">
+                  <img
+                    class="network-img"
+                    src="/icon-network/linkedin.png"
+                  /></div
+              ></a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="singolo.js"></script>
   </body>
 </html>
