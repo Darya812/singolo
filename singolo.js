@@ -36,31 +36,51 @@ function resetNavigationState() {
   blockHomeNav.classList.remove("nav-event");
 }
 
-/*-------------portfolio tab-------------------------*/
 
+
+
+
+/*-------------portfolio tab----------change place img----------------------------------------------------------*/
+
+
+
+
+const picture = document.querySelector("#first-picture");
 const tabPortfolioAll = document.querySelector("#tabPortfolioAll");
 tabPortfolioAll.addEventListener("click", () => {
   resetPortfolioState();
   tabPortfolioAll.classList.add("portfolio-event");
+   picture.classList.toggle("change-place");
 });
+
 
 const tabPortfolioWebDesign = document.querySelector("#tabPortfolioWebDesign");
 tabPortfolioWebDesign.addEventListener("click", () => {
   resetPortfolioState();
   tabPortfolioWebDesign.classList.add("portfolio-event");
-});
+   picture.classList.toggle("change-place");
+}); 
+
+
 const tabPortfolioGraphicDesign = document.querySelector(
   "#tabPortfolioGraphicDesign"
 );
 tabPortfolioGraphicDesign.addEventListener("click", () => {
   resetPortfolioState();
   tabPortfolioGraphicDesign.classList.add("portfolio-event");
+   picture.classList.toggle("change-place");
 });
+
+
 const tabPortfolioArtwork = document.querySelector("#tabPortfolioArtwork");
 tabPortfolioArtwork.addEventListener("click", () => {
   resetPortfolioState();
   tabPortfolioArtwork.classList.add("portfolio-event");
+   picture.classList.toggle("change-place");
 });
+
+
+
 
 function resetPortfolioState() {
   tabPortfolioAll.classList.remove("portfolio-event");
@@ -70,7 +90,8 @@ function resetPortfolioState() {
 }
 
 
-/*------------menu burger----------------*/
+
+/*------------menu burger---------------------------------------------------------------------------------*/
 
 function openMenu() {
     document.getElementsByClassName("header-content").classList.toggle("active");

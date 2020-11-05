@@ -68,13 +68,13 @@ h1 {
 }
 
 li a {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 .dot {
   color: white;
   list-style-type: disc;
-  
+
   list-style-position: inside;
 }
 
@@ -120,6 +120,7 @@ li a {
   border-bottom-width: 6px;
   border-bottom-style: solid;
   border-bottom-color: #ffffff;
+  position: relative;
 }
 
 .block-services h2 {
@@ -131,14 +132,10 @@ li a {
 .block-services p {
 }
 
-/* .block-services {
+.position {
   position: absolute;
- top: -83px;
+  top: -63px;
 }
-
-#block-services {
-  position: relative;
-  } */
 
 .card {
   display: flex;
@@ -306,12 +303,10 @@ footer {
 
   .arrow-left {
     margin-left: 10px;
-
   }
 
   .arrow-right {
     margin-right: 10px;
-
   }
 
   .copyright {
@@ -349,23 +344,9 @@ footer {
     margin-left: 25px;
   }
 
-  
-}
 
-/*------------------------------------*/
 
-.list-nav a.nav-event {
-  color: #f06c64;
-}
-
-.tab span.portfolio-event {
-  border-color: white;
-  color: white;
-}
-
-/*------------burger menu-----------*/
-
-/* .header-content {
+  . {
   position: fixed;
   width: 278px;
   height: 100%;
@@ -374,6 +355,10 @@ footer {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+}
+
+.header-content.active {
+  display: flex;
 }
 
 .icon-menu-burger {
@@ -387,6 +372,41 @@ footer {
   display: flex;
   flex-direction: column;
   
-} */
+}
 
 
+}
+
+/*--------------------------------------------------------*/
+
+.list-nav a.nav-event {
+  color: #f06c64;
+}
+
+.tab span.portfolio-event {
+  border-color: white;
+  color: white;
+}
+
+
+
+
+
+.change-place {
+  display: grid;
+  order: 6;
+}
+
+.change-place-1 {
+  display: grid;
+  order: -3;
+}
+.change-place-2 {
+  display: grid;
+  order: 3;
+}
+
+.change-place-3 {
+  display: grid;
+  order: -2;
+}
