@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple-Singolo</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"/>
   </head>
 
-  <body>
+  <body class="body" id="body">
     <header id="header" class="header">
-      <div class="header-content wrapper" id="sideBar">
-        <div class="icon-menu-burger" onclick="openMenu()">
-          <img src="./menu/Burger-menu-icon.png" />
+      <div class="shadow"></div>
+      <div class="header-content wrapper">
+        <div class="icon-menu-burger"  onclick="openMenu()">
+          <img src="./menu/Burger-menu-icon.png" id="button"/>
         </div>
         <div class="logo">
           <h1>SINGOLO<span class="char-logo">*</span></h1>
@@ -34,6 +33,27 @@
               <li><a href="#contacts" id="blockAboutNav">ABOUT</a></li>
               <li class="dot"></li>
               <li><a href="#contacts" id="blockContactNav">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="header-content-burger" id="header-content-burger">
+        <div class="icon-logo-burger">
+        <div class="icon-menu-burger2" onclick="openMenu()">
+          <img src="./menu/Burger-menu-icon.png" />
+        </div>
+        <div class="logo-burger">
+          <h1>SINGOLO<span class="char-logo">*</span></h1>
+        </div>
+      </div>
+        <div class="navigation-burger">
+          <nav class="nav-header-burger">
+            <ul class="list-nav-burger">
+              <li><a href="#slider" id="blockHomeNavBurger">HOME</a></li>
+              <li><a href="#block-services" id="blockServicesNavBurger">SERVICES</a></li>
+              <li><a href="#portfolio" id="blockPortfolioNavBurger">PORTFOLIO</a></li>
+              <li><a href="#contacts" id="blockAboutNavBurger">ABOUT</a></li>
+              <li><a href="#contacts" id="blockContactNavBurger">CONTACT</a></li>
             </ul>
           </nav>
         </div>
@@ -138,7 +158,8 @@
         </div>
       </div>
     </section>
-    <section id="portfolio" class="portfolio">
+    <section class="portfolio">
+      <div class="position" id="portfolio"></div>
       <div class="wrapper">
         <div class="portfolio-content">
           <h2>Portfolio</h2>

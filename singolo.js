@@ -36,31 +36,22 @@ function resetNavigationState() {
   blockHomeNav.classList.remove("nav-event");
 }
 
-
-
-
-
 /*-------------portfolio tab----------change place img----------------------------------------------------------*/
-
-
-
 
 const picture = document.querySelector("#first-picture");
 const tabPortfolioAll = document.querySelector("#tabPortfolioAll");
 tabPortfolioAll.addEventListener("click", () => {
   resetPortfolioState();
   tabPortfolioAll.classList.add("portfolio-event");
-   picture.classList.toggle("change-place");
+  picture.classList.toggle("change-place");
 });
-
 
 const tabPortfolioWebDesign = document.querySelector("#tabPortfolioWebDesign");
 tabPortfolioWebDesign.addEventListener("click", () => {
   resetPortfolioState();
   tabPortfolioWebDesign.classList.add("portfolio-event");
-   picture.classList.toggle("change-place");
-}); 
-
+  picture.classList.toggle("change-place");
+});
 
 const tabPortfolioGraphicDesign = document.querySelector(
   "#tabPortfolioGraphicDesign"
@@ -68,19 +59,15 @@ const tabPortfolioGraphicDesign = document.querySelector(
 tabPortfolioGraphicDesign.addEventListener("click", () => {
   resetPortfolioState();
   tabPortfolioGraphicDesign.classList.add("portfolio-event");
-   picture.classList.toggle("change-place");
+  picture.classList.toggle("change-place");
 });
-
 
 const tabPortfolioArtwork = document.querySelector("#tabPortfolioArtwork");
 tabPortfolioArtwork.addEventListener("click", () => {
   resetPortfolioState();
   tabPortfolioArtwork.classList.add("portfolio-event");
-   picture.classList.toggle("change-place");
+  picture.classList.toggle("change-place");
 });
-
-
-
 
 function resetPortfolioState() {
   tabPortfolioAll.classList.remove("portfolio-event");
@@ -89,11 +76,41 @@ function resetPortfolioState() {
   tabPortfolioArtwork.classList.remove("portfolio-event");
 }
 
-
-
 /*------------menu burger---------------------------------------------------------------------------------*/
 
-function openMenu() {
-    document.getElementsByClassName("header-content").classList.toggle("active");
 
+const burgerMenu = document.querySelector("#body");
+function openMenu() {
+  burgerMenu.classList.toggle("active");
 }
+
+
+const blockHomeNavBurger = document.querySelector("#blockHomeNavBurger");
+blockHomeNavBurger.addEventListener("click", () => {
+  burgerMenu.classList.remove("active");
+  
+});
+
+const blockServicesNavBurger = document.querySelector("#blockServicesNavBurger");
+blockServicesNavBurger.addEventListener("click", () => {
+  burgerMenu.classList.remove("active");
+  
+});
+
+const blockPortfolioNavBurger = document.querySelector("#blockPortfolioNavBurger");
+blockPortfolioNavBurger.addEventListener("click", () => {
+  burgerMenu.classList.remove("active");
+  
+});
+
+const blockAboutNavBurger = document.querySelector("#blockAboutNavBurger");
+blockAboutNavBurger.addEventListener("click", () => {
+  burgerMenu.classList.remove("active");
+  
+});
+
+const blockContactNavBurger = document.querySelector("#blockContactNavBurger");
+blockContactNavBurger.addEventListener("click", () => {
+  burgerMenu.classList.remove("active");
+  
+});
