@@ -23,11 +23,9 @@ body {
   border-bottom-color: #323746;
 }
 
-
 .header-content-burger {
   display: none;
 }
-
 
 .icon-menu-burger {
   display: none;
@@ -88,30 +86,76 @@ li a {
   list-style-position: inside;
 }
 
-.slider {
+/* .slider1 {
+  width: 100%;
+  /* position: relative;
+  top: 80px; */
+  /* background-color: #f06c64;
+} */
+
+/* --------------------- */
+.emptyElement {
+  width: 100%;
+  height: 70px;
   background-color: #f06c64;
-  border-bottom-width: 6px;
-  border-bottom-style: solid;
-  border-bottom-color: #ea676b;
+}
+.slider {
+  width: 100%;
+  background-color: #f06c64;
+ }
+
+.slider__wrapper {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  max-width: 1020px;
+  height: 57vw;
+  min-height: 218px;
+  max-height: 595px;
 }
 
-.slider-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 87px;
-}
-
-.arrow-left {
-  margin-left: 40px;
+.slider__arrow {
+  position: absolute;
+  top: 43%;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.arrow-right {
-  margin-right: 40px;
-  cursor: pointer;
+.slider__arrow--left {
+  left: 5%;
 }
 
+.slider__arrow--right {
+  right: 5%;
+}
+
+.slider__photo {
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+
+@keyframes moveRight {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+/* ------------------------- */
 .paragraph {
   color: #767e9e;
   padding-bottom: 60px;
@@ -297,7 +341,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
   .card {
     width: 100%;
     justify-content: center;
@@ -353,27 +396,26 @@ footer {
     margin-left: 25px;
     cursor: pointer;
   }
-/*----------------burger menu-------------------------------*/
+  /*----------------burger menu-------------------------------*/
 
-.active.body  {
-  overflow: hidden;
+  .active.body {
+    overflow: hidden;
   }
 
-.active .header-content {
-  height: 63px;
-  
-}
+  .active .header-content {
+    height: 63px;
+  }
 
-.active .shadow {
-  background: #2D303A;
-opacity: 0.6;
-width: 100%;
-height: 100%;
-position: fixed;
-display: flex;
-}
+  .active .shadow {
+    background: #2d303a;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+  }
 
-.active .logo {
+  .active .logo {
     display: none;
   }
 
@@ -392,18 +434,16 @@ display: flex;
     display: flex;
     flex-direction: column;
     box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
-    
-    }
+  }
 
-    .active .icon-logo-burger {
- display: flex;
+  .active .icon-logo-burger {
+    display: flex;
     flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 25px;
-  margin-bottom: 180px;
-        
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 180px;
   }
 
   .active .icon-menu-burger2 {
@@ -413,8 +453,8 @@ display: flex;
   .active .logo-burger h1 {
     margin: 0;
     margin-right: 60px;
-    }
-    .active .dot {
+  }
+  .active .dot {
     display: none;
   }
 
@@ -425,47 +465,38 @@ display: flex;
     margin-left: 25px;
   }
 
- 
   .active .list-nav-burger li {
-  cursor: pointer;
-  list-style-type: none;
-  margin: 0;
+    cursor: pointer;
+    list-style-type: none;
+    margin: 0;
 
     font-size: 24px;
-line-height: 29px;
-margin-bottom: 27px;
+    line-height: 29px;
+    margin-bottom: 27px;
   }
 
   .active .list-nav-burger a {
-  color: #FFFFFF;
-  cursor: pointer;
+    color: #ffffff;
+    cursor: pointer;
     text-decoration: none;
     margin: 0;
-}
-
-.active .list-nav-burger a:hover {
-  color: #F06C64;
-  cursor: pointer;
-    
-}
-.active .icon-menu-burger2 {
-   animation-name: rotateImg;
-  animation-duration: 5s;
-    animation-iteration-count: infinite;
   }
 
-@keyframes rotateImg {
-  0% {
-      transform:rotate(0deg);
+  .active .list-nav-burger a:hover {
+    color: #f06c64;
+    cursor: pointer;
   }
-  50% {
-      transform:rotate(90deg);
+  .active .icon-menu-burger2 {
+    animation-name: rotateImg;
+    animation-duration: 2s;
+    animation-iteration-count: unset;
   }
-  100% {
-    transform:rotate(0deg);
-  }
-}
 
+  @keyframes rotateImg {
+    to {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 /*--------------------styles for js------------------------------------*/
@@ -483,4 +514,3 @@ margin-bottom: 27px;
   display: grid;
   order: 6;
 }
-

@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple-Singolo</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
-      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="body" id="body">
     <header id="header" class="header">
       <div class="shadow"></div>
       <div class="header-content wrapper">
-        <div class="icon-menu-burger"  onclick="openMenu()">
-          <img src="./menu/Burger-menu-icon.png" id="button"/>
+        <div class="icon-menu-burger" onclick="openMenu()">
+          <img src="./menu/Burger-menu-icon.png" id="button" />
         </div>
         <div class="logo">
           <h1>SINGOLO<span class="char-logo">*</span></h1>
@@ -22,7 +24,9 @@
         <div class="navigation">
           <nav class="nav-header">
             <ul class="list-nav">
-              <li><a href="#slider" id="blockHomeNav">HOME</a></li>
+              <li>
+                <a href="#slider" id="blockHomeNav" class="nav-event">HOME</a>
+              </li>
               <li class="dot"></li>
               <li>
                 <a href="#block-services" id="blockServicesNav">SERVICES</a>
@@ -39,39 +43,51 @@
       </div>
       <div class="header-content-burger" id="header-content-burger">
         <div class="icon-logo-burger">
-        <div class="icon-menu-burger2" onclick="openMenu()">
-          <img src="./menu/Burger-menu-icon.png" />
+          <div class="icon-menu-burger2" onclick="openMenu()">
+            <img src="./menu/Burger-menu-icon.png" />
+          </div>
+          <div class="logo-burger">
+            <h1>SINGOLO<span class="char-logo">*</span></h1>
+          </div>
         </div>
-        <div class="logo-burger">
-          <h1>SINGOLO<span class="char-logo">*</span></h1>
-        </div>
-      </div>
         <div class="navigation-burger">
           <nav class="nav-header-burger">
             <ul class="list-nav-burger">
               <li><a href="#slider" id="blockHomeNavBurger">HOME</a></li>
-              <li><a href="#block-services" id="blockServicesNavBurger">SERVICES</a></li>
-              <li><a href="#portfolio" id="blockPortfolioNavBurger">PORTFOLIO</a></li>
+              <li>
+                <a href="#block-services" id="blockServicesNavBurger"
+                  >SERVICES</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio" id="blockPortfolioNavBurger">PORTFOLIO</a>
+              </li>
               <li><a href="#contacts" id="blockAboutNavBurger">ABOUT</a></li>
-              <li><a href="#contacts" id="blockContactNavBurger">CONTACT</a></li>
+              <li>
+                <a href="#contacts" id="blockContactNavBurger">CONTACT</a>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <section id="slider" class="slider">
-      <div class="wrapper">
-        <div class="slider-content">
-          <div class="arrow-left">
-            <img class="img-arrow" src="./slide/arrow-left.png" width="100%" />
-          </div>
-          <div class="slide-img">
-            <img src="./slide/Slide-1.jpg" width="100%" />
-          </div>
-          <div class="arrow-right">
-            <img class="img-arrow" src="./slide/arrow-right.png" width="100%" />
-          </div>
+    <div id="slider" class="emptyElement"></div>
+    <section  class="slider">
+            <div class="slider__wrapper">
+        <div class="sliders">
+          <img class="slider__photo" src="./slide/Slide-1.jpg" alt="slide-1" />
+          <img class="slider__photo" src="./slide/Slide-2.jpg" alt="slide-2" />
         </div>
+        <img
+          class="slider__arrow slider__arrow--left"
+          src="./slide/arrow-left.png"
+                 onclick="right()"
+        />
+        <img
+          class="slider__arrow slider__arrow--right"
+          src="./slide/arrow-right.png"
+                   onclick="left()"
+        />
       </div>
     </section>
     <section class="block-services">

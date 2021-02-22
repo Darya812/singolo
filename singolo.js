@@ -1,3 +1,50 @@
+
+  const arrowLeft = document.querySelector('.slider__arrow--left');
+  const arrowRight = document.querySelector('.slider__arrow--right');
+  const sliders = document.querySelector('.sliders');
+  const images = document.querySelectorAll('.slider__photo');
+  
+  let counter = 0;
+  images[counter].style.display = 'block';
+  
+  function left() {
+    let nextIndex = counter + 1;
+  
+    if (nextIndex >= images.length) {
+      nextIndex = 0;
+    }
+  
+    const next = images[nextIndex];
+    sliders.append(next);
+    next.style.display = 'block';
+    next.style.animation = 'moveRight 1s';
+  
+    counter += 1;
+    if (counter >= images.length) {
+      counter = 0;
+    }
+  }
+  
+  function right(){
+    let prevIndex = counter - 1;
+  
+    if (prevIndex < 0) {
+      prevIndex = images.length - 1;
+    }
+  
+    const prev = images[prevIndex];
+    sliders.append(prev);
+    prev.style.display = 'block';
+    prev.style.animation = 'moveLeft 1s';
+  
+    counter -= 1;
+    if (counter < 0) {
+      counter = images.length - 1;
+    }
+  }
+// ----------------------------
+
+
 const blockServicesNav = document.querySelector("#blockServicesNav");
 blockServicesNav.addEventListener("click", () => {
   resetNavigationState();
@@ -113,4 +160,26 @@ const blockContactNavBurger = document.querySelector("#blockContactNavBurger");
 blockContactNavBurger.addEventListener("click", () => {
   burgerMenu.classList.remove("active");
   
+});
+
+//---------scroll-event----------------------------------
+function addColorNav(id) {
+  resetNavigationState();
+  const elem = document.querySelector(id);
+  elem.classList.add("nav-event");
+}
+
+window.addEventListener("scroll", () => {
+  let id;
+  let scrollH = window.pageYOffset;
+  if (scrollH <= 255) {
+    id = "#blockHomeNav";
+  }else if (scrollH >= 256 && scrollH < 902) {
+    id = "#blockServicesNav";
+  } else if (scrollH >= 903 && scrollH < 1553) {
+    id = "#blockPortfolioNav";
+  } else if (scrollH >= 1554) {
+    id = "#blockAboutNav";
+  }
+  addColorNav(id);
 });
